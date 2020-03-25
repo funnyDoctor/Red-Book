@@ -1,3 +1,9 @@
+1.You can follow this link: https://red-book-4bcb1.firebaseapp.com/
+2."Back end" of this application starts with a delay of 30 seconds or you can follow this link: https://red-book-api.herokuapp.com/ 
+and repeat again)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
