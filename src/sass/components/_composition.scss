@@ -1,0 +1,46 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%;
+    -webkit-box-shadow: 0 23px 70px rgba($color-black, .4);
+    box-shadow: 0 23px 70px rgba($color-black, .4);
+    position: absolute;
+    z-index: 10;
+    @include respond (tab-port) {
+      float: left;
+      position: relative;
+      width: 33.3333333333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    }
+    &--p1 {
+      left: 0;
+      top: -20px;
+      width: 50%;
+      @include respond (tab-land) {
+        width: 60%;
+        left: 40px;
+      }
+      @include respond (tab-port) {
+        width: 0;
+        visibility: hidden;
+      }
+    }
+    &--p2 {
+      right: 90px;
+      top: 20px;
+      width: 45%;
+      @include respond (tab-land) {
+        width: 50%;
+        top: 50px;
+        left: 180px;
+      }
+      @include respond (tab-port) {
+        width: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+
+.preview {
+  min-height: 100vh;
+  background: linear-gradient(to left, rgba($main-dark,1) 0%, rgba($main,1) 100%);
+  position: relative;
+}
+
+.page {
+  padding: 18px;
+}
+
+.heading-primary {
+  color: $color-primary;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 90px;
+  @include respond (tab-land) {
+    margin-bottom: 60px;
+  }
+  @include respond (tab-port) {
+    margin-bottom: 60px;
+  }
+
+  &__main {
+    display: block;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    @include respond (tab-land) {
+      font-size: 30px;
+    }
+    @include respond (tab-port) {
+      font-size: 25px;
+    }
+    @include respond (phone) {
+      font-size: 17px;
+    }
+
+  }
+  &__sub {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: $color-white;
+    @include respond (tab-land) {
+      font-size: 20px;
+    }
+    @include respond (tab-port) {
+      font-size: 17px;
+      letter-spacing: 3px;
+    }
+    @include respond (phone) {
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($main), to($main-dark));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-tertiary {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main;
+}
+
+.paragraph {
+  font-size: 17px;
+  color: $color-black;
+  font-family: 'Josefin Sans', sans-serif;
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  @include respond (tab-land) {
+    font-size: 14px;
+  }
+  @include respond (tab-port) {
+    font-size: 18px;
+  }
+}

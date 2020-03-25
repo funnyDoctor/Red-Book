@@ -1,0 +1,113 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+
+.feature-box {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+  &__column {
+    width:25%;
+    float:left;
+    @include respond (tab-port) {
+      width:50%;
+    }
+  }
+  &__card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width:300px;
+    margin:auto;
+    background-color:$color-white;
+    text-align:center;
+    border-radius:40px;
+    padding-bottom:15px;
+    border: 1px solid black;
+    @include respond (tab-land) {
+      max-width:250px;
+    }
+    @include respond (phone) {
+      max-width:200px;
+    }
+    @include respond (tab-port) {
+      margin-bottom: 5px;
+    }
+    @include respond (phone) {
+      max-width:180px;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $main;
+    padding-top: 30px;
+    @include respond (tab-land) {
+      font-size: 13px;
+    }
+    @include respond (tab-port) {
+      padding-top: 20px;
+    }
+    @include respond (phone) {
+      font-size: 11px;
+      padding-top: 15px;
+    }
+  }
+  &__title {
+    color: $color-black;
+    text-align: center;
+    font-size: 18px;
+    padding: 19px;
+    @include respond (tab-land) {
+      font-size: 14px;
+      padding: 14px;
+    }
+    @include respond (tab-port) {
+      font-size: 12px;
+      padding: 4px;
+    }
+    @include respond (phone) {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  &__btn-box {
+    padding-top: 40px;
+    @include respond (tab-port) {
+      padding-top: 30px;
+    }
+    @include respond (phone) {
+      padding-top: 20px;
+    }
+  }
+  &__image {
+    width:120px;
+    height:120px;
+    padding-top:10px;
+    border-radius: 50%;
+    background-size: cover;
+    @include respond (tab-land) {
+      width:60px;
+      height:60px;
+    }
+  }
+}
+
+.bird {
+  padding-top: 60px;
+  @include respond (tab-port) {
+    padding-top: 34px;
+  }
+  @include respond (phone) {
+    padding-top: 34px;
+  }
+
+}
+
+.mushrooms {
+  @include respond (tab-land) {
+    padding-top: 35px;
+  }
+}
+
+

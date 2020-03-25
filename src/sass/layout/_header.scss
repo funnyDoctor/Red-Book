@@ -1,0 +1,18 @@
+@import "../abstracts/variables";
+
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../image/header.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
