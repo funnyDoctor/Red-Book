@@ -64,7 +64,6 @@ class Features extends React.Component {
     };
 
     cancelGymnosperms = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenGymnosperms: false });
     };
 
@@ -74,7 +73,6 @@ class Features extends React.Component {
     };
 
     cancelMushrooms = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenMushrooms: false });
     };
 
@@ -84,7 +82,6 @@ class Features extends React.Component {
     };
 
     cancelAmphibians = () => {
-        console.log('Cancel function!');
         this.setState({isOpenAmphibians: false });
     };
 
@@ -94,7 +91,6 @@ class Features extends React.Component {
     };
 
     cancelAnnelids = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenAnnelids: false });
     };
 
@@ -104,7 +100,6 @@ class Features extends React.Component {
     };
 
     cancelLichens = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenLichens: false });
     };
 
@@ -114,7 +109,6 @@ class Features extends React.Component {
     };
 
     cancelMammals = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenMammals: false });
     };
 
@@ -124,7 +118,6 @@ class Features extends React.Component {
     };
 
     cancelMollusks = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenMollusks: false });
     };
 
@@ -134,7 +127,6 @@ class Features extends React.Component {
     };
 
     cancelBryophytes = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenBryophytes: false });
     };
 
@@ -144,7 +136,6 @@ class Features extends React.Component {
     };
 
     cancelInsects = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenInsects: false });
     };
 
@@ -154,7 +145,6 @@ class Features extends React.Component {
     };
 
     cancelFernPlants = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenFernPlants: false });
     };
 
@@ -164,7 +154,6 @@ class Features extends React.Component {
     };
 
     cancelFloatingPlants = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenFloatingPlants: false });
     };
 
@@ -174,7 +163,6 @@ class Features extends React.Component {
     };
 
     cancelAngiosperms = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenAngiosperms: false });
     };
 
@@ -184,7 +172,6 @@ class Features extends React.Component {
     };
 
     cancelReptiles = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenReptiles: false });
     };
 
@@ -194,7 +181,6 @@ class Features extends React.Component {
     };
 
     cancelBirds = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenBirds: false });
     };
 
@@ -204,7 +190,6 @@ class Features extends React.Component {
     };
 
     cancelCrustaceans = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenCrustaceans: false });
     };
 
@@ -214,7 +199,6 @@ class Features extends React.Component {
     };
 
     cancelFishes = () => {
-        console.log('Cancel function!');
         this.setState({ isOpenFishes: false });
     };
 

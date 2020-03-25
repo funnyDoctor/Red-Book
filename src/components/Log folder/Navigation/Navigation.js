@@ -11,7 +11,6 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         return (
             <nav className={'navigation'}>
                 <p onClick={() => onRouteChange('signin')} className={'navigation__all'}>Войти</p>
-                {/*<p onClick={() => onRouteChange('signup')} className={'navigation--out'}>Sign Up</p>*/}
             </nav>
         )
     }
